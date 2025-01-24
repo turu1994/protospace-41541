@@ -5,7 +5,7 @@ before_action :move_to_index, only: [:edit, :update, :destroy]
 
 
 def index
-  @prototypes = Prototype.includes(:user)
+  @prototype = Prototype.includes(:user)
 end
 
 def  new
